@@ -75,7 +75,7 @@ async def on_ready():
     bot.loop.create_task(on_node())
     wavelink.Player.autoplay = True
 
-#test123
+#test1
 
 # on node
 async def on_node():
