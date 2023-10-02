@@ -60,7 +60,6 @@ bot = commands.Bot(command_prefix="!", intents = intents)
 
 
 # recent_interaction_channel = None
-
 # @bot.event
 # async def on_interaction(interaction):
 #     global recent_interaction_channel
@@ -75,24 +74,6 @@ async def on_ready():
     print("Bot Ready!")
     bot.loop.create_task(on_node())
     wavelink.Player.autoplay = True
-
-
-
-
-
-
-#---- IDLE ----#
-
-# Disconnect after 2 minutes idle
-# @tasks.loop(minutes=2)
-# async def check_idle(bot):
-#     # Check if the bot is in a voice channel in the current guild
-#     if bot.voice_clients and bot.voice_clients[0].is_connected():
-#         vc = bot.voice_clients[0]  # Get the first voice client (assuming there's only one)
-#         if not vc.is_playing() and vc.queue.is_empty:
-#             await vc.disconnect()
-
-#--------------#
 
 
 
