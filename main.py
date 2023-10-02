@@ -59,6 +59,17 @@ client = nextcord.Client()
 bot = commands.Bot(command_prefix="!", intents = intents)
 
 
+# recent_interaction_channel = None
+
+# @bot.event
+# async def on_interaction(interaction):
+#     global recent_interaction_channel
+#     recent_interaction_channel = interaction.channel
+
+
+# bot.load_extension("cogs")
+# bot.setup(recent_interaction_channel)
+
 @bot.event
 async def on_ready():
     print("Bot Ready!")
@@ -66,7 +77,9 @@ async def on_ready():
     wavelink.Player.autoplay = True
 
 
- # check_idle.start(bot)
+
+
+
 
 #---- IDLE ----#
 
@@ -101,11 +114,6 @@ async def test(interaction : Interaction):
     print(f"vc: {bool(vc)}")
     print(f"connected: {vc.is_connected()}")
 
-# @wavelink.Player.listener()
-# async def on_track_end(track, reason):
-#     if reason == wavelink.TrackEndReason.FINISHED:
-#         # This means the track finished playing normally
-#         await wavelink.Player.send_message("The song has ended!")  # Replace with your desired message
 
 
 #------------------- COMMANDS ------------------------#
@@ -146,13 +154,15 @@ async def play(interaction : Interaction, search : str):
             return
     
     if vc.queue.is_empty and not vc.is_playing():
-
         await vc.play(query)
-        np(interaction)
 
     else: #queue not empty
         await vc.queue.put_wait(query)
-        await interaction.response.send_message(f"Added {query} to the queue..")
+
+    embed = nextcord.Embed(title="Added to the queue:", color=nextcord.Color.green())
+    embed.add_field(name="\u200B", value=f":white_check_mark: [{query.title}]({query.uri})")
+    embed.set_thumbnail(query.thumbnail)
+    await interaction.response.send_message(embed=embed)
 
 
 
