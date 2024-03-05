@@ -9,23 +9,6 @@ intents = nextcord.Intents.all()
 client = nextcord.Client()
 bot = commands.Bot(command_prefix="!", intents = intents)
 
-
-
-# For future use - implementing cogs
-
-# recent_interaction_channel = None
-# @bot.event
-# async def on_interaction(interaction):
-#     global recent_interaction_channel
-#     recent_interaction_channel = interaction.channel
-
-# @bot.event
-# async def on_wavelink_track_end(self, payload: wavelink.TrackEventPayload):
-#     # You can access recent_interaction_channel here
-#     print(f"Track {payload.track.title} ended in channel {self.recent_interaction_channel}")
-# # bot.load_extension("cogs")
-# # bot.setup(recent_interaction_channel)
-
 @bot.event
 async def on_ready():
     print("Bot Ready!")
