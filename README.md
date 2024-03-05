@@ -23,7 +23,7 @@
      ```bash
      cd PATH_TO_FILE
      ```
-     where PATH_TO_FILE is the path to the folder. For example C:/Discord-Music-BOt
+     where PATH_TO_FILE is the path to the folder. For example C:/discord-music-bot
 
      then:
 
