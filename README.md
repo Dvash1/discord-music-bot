@@ -1,4 +1,4 @@
-> discord-music-bot is both a template and a download-and-run music bot for your discord server, made using Wavelinkcord and Nextcord.
+> discord-music-bot is both a template and a download-and-run music bot for your discord server that works with Youtube and Spotify, since most bots no longer work with Youtube. Made using Wavelinkcord and Nextcord.
 > 
 > It was made as a music bot that ANYONE - even those who are unfamiliar with coding can simply download and run it with as minimum trouble as possible.
 > 
