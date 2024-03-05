@@ -33,7 +33,7 @@
 - 4. Now you should have everything you need to have installed! Now, we're gonna need to get your bot's token. If you still dont have it, don't worry:
      4.1. Head on over to [Discord's Developer Portal](https://discord.com/developers/docs/intro), log in, go to "Applications" and press 'New Application'. Give it a cool name.
      4.2. Head to "OAuth2" and click as follows (Those are the premissions the bot has. Currently, it needs Administrator permissions, and I plan to change it at a later date.)
-     ![BotPermissions](https://imgur.com/ScHscuP)
+     ![Imgur](https://imgur.com/ScHscuP)
      ![BotPremissions2](https://imgur.com/dIG7vWO)
 
      and there should be a URL at the bottom for you to get your bot to join the server.
