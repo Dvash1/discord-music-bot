@@ -1,0 +1,7 @@
+#ignore all folders
+C:/Users/danie/Documents/python/DiscordNextCord/*/
+
+#ignore sensitive files
+tokens.py
+todo.txt
+test.ipynb
