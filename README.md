@@ -1,4 +1,4 @@
-> Discord-Music-Bot is both a template and a download-and-run music bot for your discord server, made using Wavelinkcord and Nextcord.
+> discord-music-bot is both a template and a download-and-run music bot for your discord server, made using Wavelinkcord and Nextcord.
 > 
 > It was made as a music bot that ANYONE - even those who are unfamiliar with coding can simply download and run it with as minimum trouble as possible.
 > 
@@ -12,7 +12,7 @@
 - Slash commands using discord's Nextcord.
   - Simple commands like: play, volume, seek, skip, connect_to, pause, resume, leave, np (now playing), shuffle, forward, play_next, delete, queue, clear_queue.
   - Simple descriptions when using the slash commands on discord. Check them out!
-- A lavalink based player, using Wavelinkcord - a fork by @Zyb3rWolfi.
+- A lavalink based player, using Wavelinkcord - a fork by Zyb3rWolfi.
 
 
 ## Getting started <!-- omit in toc -->
